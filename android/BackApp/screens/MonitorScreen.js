@@ -9,10 +9,12 @@ import {
   View,
 } from 'react-native';
 import { WebBrowser } from 'expo';
-
 import { MonoText } from '../components/StyledText';
+import { BleManager } from 'react-native-ble-plx';
 
-export default class HomeScreen extends React.Component {
+const manager = new BleManager();
+
+export default class MonitorScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
@@ -86,6 +88,18 @@ export default class HomeScreen extends React.Component {
       );
     }
   }
+
+  componentDidMount() {
+    bleManager.startDeviceScan(
+      // UUIDs: ?Array<UUID>,
+      // options: ?ScanOptions,
+      listener=_listener,
+    );
+  };
+
+  _listener(error, scannedDevice) {
+
+  };
 
   _handleLearnMorePress = () => {
     WebBrowser.openBrowserAsync('https://docs.expo.io/versions/latest/guides/development-mode');

@@ -1,0 +1,10 @@
+{
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 5317,
+  "expoServerNgrokUrl": "https://ia-rkx.mnk179.backapp.exp.direct",
+  "packagerNgrokUrl": "https://packager.ia-rkx.mnk179.backapp.exp.direct",
+  "ngrokPid": 5334,
+  "webpackServerPort": null,
+  "devToolsPort": 19002
+}

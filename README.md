@@ -1,1 +1,1 @@
-# ic-health-hack-2019
+# IC Health Hack 2019
